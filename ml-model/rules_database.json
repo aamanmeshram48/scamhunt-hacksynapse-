@@ -1,0 +1,125 @@
+{
+  "engine_name": "ScamHunt Deterministic AI Heuristic Threat Engine",
+  "version": "2.0.0",
+  "rule_architecture": "Explainable Rule-Based Heuristics with Cryptographic Evidence Hashing",
+  "score_range": { "min": 0, "max": 100 },
+  "thresholds": {
+    "LOW_RISK": [0, 34],
+    "SUSPICIOUS": [35, 69],
+    "HIGH_RISK": [70, 100]
+  },
+  "categories": [
+    {
+      "id": "URGENCY",
+      "name": "Social Engineering & Urgency Coercion",
+      "points": 20,
+      "description": "Induces panic, artificial time scarcity, or imminent service disconnection.",
+      "keywords": [
+        "urgent", "immediately", "act now", "last warning", "final warning",
+        "expires today", "right away", "within 24 hours", "act fast",
+        "limited time", "immediate action required", "power cut tonight",
+        "disconnect electricity", "bill unpaid", "account blocked today"
+      ]
+    },
+    {
+      "id": "CREDENTIALS",
+      "name": "Authentication Credential Theft",
+      "points": 35,
+      "description": "Solicits confidential 2FA passwords, OTPs, PINs, or netbanking credentials.",
+      "keywords": [
+        "otp", "pin", "password", "passcode", "cvv", "verification code",
+        "security code", "one time password", "login details", "atm pin", "netbanking password"
+      ]
+    },
+    {
+      "id": "PAYMENT",
+      "name": "Financial Fraud & Coerced Payment",
+      "points": 22,
+      "description": "Demands advance fees, gift cards, crypto deposits, or peer-to-peer wire transfers.",
+      "keywords": [
+        "pay now", "payment", "send money", "transfer", "upi",
+        "processing fee", "gift card", "bitcoin", "crypto", "deposit",
+        "wire transfer", "advance fee", "registration fee", "clearance fee",
+        "refundable deposit", "pay tm", "google pay", "phonepe"
+      ]
+    },
+    {
+      "id": "PRIZE",
+      "name": "Lottery & False Prize Enticement",
+      "points": 22,
+      "description": "Promises unsolicited lottery wins, cashback, or high cash rewards.",
+      "keywords": [
+        "won", "winner", "prize", "reward", "lottery", "jackpot",
+        "cashback", "free gift", "congratulations", "selected winner",
+        "kbc lottery", "lucky draw", "claim 25 lakh", "claim prize"
+      ]
+    },
+    {
+      "id": "IMPERSONATION",
+      "name": "Brand & Institutional Impersonation",
+      "points": 15,
+      "description": "Impersonates recognized banking, law enforcement, or corporate entities.",
+      "keywords": [
+        "bank", "government", "police", "income tax", "amazon", "microsoft",
+        "google", "apple", "sbi", "hdfc", "icici", "paytm", "phonepe",
+        "aadhaar", "customs", "courier", "fedex", "dhl", "electricity board",
+        "cbi", "trai", "rbi", "cyber crime cell", "customs officer"
+      ]
+    },
+    {
+      "id": "ACCOUNT",
+      "name": "Account Suspension / Deactivation Threat",
+      "points": 25,
+      "description": "Threatens user with immediate deactivation of SIM, bank, or PAN services.",
+      "keywords": [
+        "account suspended", "account blocked", "account closed",
+        "verify your account", "verify account", "reactivate",
+        "unlock account", "kyc", "account will be deactivated",
+        "pan not linked", "update pan immediately", "sim card blocked"
+      ]
+    },
+    {
+      "id": "REMOTE_ACCESS",
+      "name": "Malicious Remote Access Tools",
+      "points": 35,
+      "description": "Instructs installation of screen sharing or device takeover utilities.",
+      "keywords": [
+        "anydesk", "teamviewer", "remote access", "screen sharing",
+        "download apk", "install this app", "install application",
+        "quicksupport", "screen share", "rustdesk", "airmirror"
+      ]
+    },
+    {
+      "id": "EXTORTION",
+      "name": "Digital Blackmail & Extortion",
+      "points": 35,
+      "description": "Threatens publication of private media, webcam feeds, or reputation damage.",
+      "keywords": [
+        "blackmail", "ransom", "pay or else", "send money or",
+        "i will expose you", "i will expose", "leak your photos",
+        "release the video", "share your pictures", "recorded on webcam",
+        "send to your family"
+      ]
+    },
+    {
+      "id": "JOB_INVESTMENT",
+      "name": "Task & Fake Investment Fraud",
+      "points": 20,
+      "description": "Lures victims with part-time YouTube likes, daily wages, or doubling capital.",
+      "keywords": [
+        "work from home", "earn daily", "guaranteed returns",
+        "double your money", "investment opportunity", "part time job",
+        "easy money", "no experience needed", "task based job",
+        "guaranteed profit", "like youtube videos", "telegram task"
+      ]
+    }
+  ],
+  "url_rules": {
+    "raw_ip": 25,
+    "shorteners": 20,
+    "suspicious_tld": 20,
+    "insecure_http": 10,
+    "subdomain_spoof": 15,
+    "brand_spoof": 25
+  }
+}

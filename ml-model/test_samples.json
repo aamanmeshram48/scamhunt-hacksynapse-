@@ -1,0 +1,72 @@
+[
+  {
+    "id": "SAMPLE_01",
+    "type": "phishing_electricity",
+    "text": "Dear Customer, Your electricity connection will be disconnected tonight at 9:30 PM from electricity office because your previous month bill was not updated. Please immediately call 9823456712 or visit http://wb-electricity-update.top/pay to avoid outage.",
+    "expected_risk": "HIGH RISK",
+    "expected_indicators": ["URGENCY", "PAYMENT", "IMPERSONATION", "ACCOUNT", "HIGH-RISK TLD"]
+  },
+  {
+    "id": "SAMPLE_02",
+    "type": "phishing_sbi_kyc",
+    "text": "Dear SBI User, your YONO account has been blocked due to uncompleted KYC. Click here http://192.168.1.1/sbi-kyc to update PAN and unblock your netbanking immediately.",
+    "expected_risk": "HIGH RISK",
+    "expected_indicators": ["ACCOUNT", "IMPERSONATION", "RAW IP DESTINATION", "URGENCY"]
+  },
+  {
+    "id": "SAMPLE_03",
+    "type": "telegram_task_scam",
+    "text": "Part time work from home opportunity! Earn daily 5000 to 10000 rupees just by liking youtube videos and reviewing products. No experience needed. Join telegram channel @earnfastdaily and send 500 registration fee to taskpay@upi.",
+    "expected_risk": "HIGH RISK",
+    "expected_indicators": ["JOB_INVESTMENT", "PAYMENT", "EMBEDDED UPI ID DETECTED"]
+  },
+  {
+    "id": "SAMPLE_04",
+    "type": "lottery_kbc",
+    "text": "Congratulations! You have won 25 Lakh in KBC Jio Lucky Draw 2026. Claim your prize immediately by paying 12,500 tax processing fee to kbcwinner@okhdfcbank.",
+    "expected_risk": "HIGH RISK",
+    "expected_indicators": ["PRIZE", "PAYMENT", "EMBEDDED UPI ID DETECTED", "URGENCY"]
+  },
+  {
+    "id": "SAMPLE_05",
+    "type": "remote_access_scam",
+    "text": "Customer Care Support: We noticed unauthorized activity on your credit card. Please install AnyDesk or QuickSupport APK from http://bit.ly/quicksupport-fix and share your code with our executive to secure your funds.",
+    "expected_risk": "HIGH RISK",
+    "expected_indicators": ["REMOTE_ACCESS", "URL SHORTENER OBFUSCATION", "CREDENTIALS"]
+  },
+  {
+    "id": "SAMPLE_06",
+    "type": "digital_extortion",
+    "text": "I have hacked your webcam and recorded private videos of you browsing adult websites. Pay 50000 to my bitcoin wallet immediately or I will leak your photos and send the video to your family and friends on social media.",
+    "expected_risk": "HIGH RISK",
+    "expected_indicators": ["EXTORTION", "PAYMENT", "URGENCY"]
+  },
+  {
+    "id": "SAMPLE_07",
+    "type": "credential_harvesting",
+    "text": "Security Alert: Someone attempted to login from a new device. Enter your 6-digit netbanking OTP and card CVV right away to verify your identity.",
+    "expected_risk": "HIGH RISK",
+    "expected_indicators": ["CREDENTIALS", "URGENCY", "PERSONAL"]
+  },
+  {
+    "id": "SAMPLE_08",
+    "type": "legitimate_flight_ticket",
+    "text": "Indigo Airlines: Your flight 6E-204 from Delhi to Mumbai is confirmed for departure tomorrow at 06:15 hrs. Web check-in is now open at https://www.goindigo.in. Have a pleasant flight.",
+    "expected_risk": "LOW RISK",
+    "expected_indicators": []
+  },
+  {
+    "id": "SAMPLE_09",
+    "type": "legitimate_bank_otp",
+    "text": "249810 is your secret OTP for transaction of Rs. 450.00 at Swiggy using HDFC Bank card ending 1092. Never share your OTP with anyone.",
+    "expected_risk": "SUSPICIOUS",
+    "expected_indicators": ["CREDENTIALS"]
+  },
+  {
+    "id": "SAMPLE_10",
+    "type": "legitimate_delivery",
+    "text": "Amazon: Your package with order #402-9182312 is out for delivery today with courier partner. Track your shipment on the official Amazon mobile app.",
+    "expected_risk": "LOW RISK",
+    "expected_indicators": ["IMPERSONATION"]
+  }
+]

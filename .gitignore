@@ -1,0 +1,60 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment & Secrets
+.env
+.env.local
+*.key
+*.pem
+secrets/
+
+# Python Caches & Virtual Environs
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Android & Gradle Build Artifacts
+android/.gradle/
+android/build/
+android/app/build/
+.gradle/
+local.properties
+*.hprof
+
+# Build Logs & Crash Reports
+*.log
+android-build.log
+wrapper-build.log
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+push_to_github.bat
+
+# Preserve Release Artifacts
+!release/
+!release/ScamHunt-final.apk

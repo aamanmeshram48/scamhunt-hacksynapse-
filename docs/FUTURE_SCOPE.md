@@ -1,4 +1,4 @@
-# ScamHunt Future Scope
+﻿# ScamHunt Future Scope
 Some features we can add in future:
 ## 1. Better AI Detection
 - Improve scam detection accuracy.
@@ -33,4 +33,4 @@ Some features we can add in future:
 
 ## Future Vision
 Our goal is to make ScamHunt a simple digital safety assistant that helps users:
-**Detect → Understand → Respond → Stay Safe**
+**Detect ΓåÆ Understand ΓåÆ Respond ΓåÆ Stay Safe**

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>ScamHunt</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f7fafe;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-container":"#0d1c32","background":"#f7fafe","surface-dim":"#d7dade","on-secondary":"#ffffff","secondary-fixed":"#dbe1ff","on-error-container":"#93000a","on-tertiary-container":"#79849a","surface-container":"#ebeef2","on-tertiary-fixed-variant":"#3c475a","tertiary-container":"#111c2d","surface-container-lowest":"#ffffff","inverse-on-surface":"#eef1f5","secondary-fixed-dim":"#b4c5ff","on-tertiary-fixed":"#111c2d","surface-bright":"#f7fafe","primary-fixed-dim":"#b9c7e4","surface":"#f7fafe","on-surface-variant":"#44474d","on-background":"#181c1f","inverse-primary":"#b9c7e4","on-secondary-fixed-variant":"#003ea8","on-secondary-container":"#fefcff","primary-fixed":"#d6e3ff","outline":"#75777e","tertiary-fixed":"#d8e3fb","on-primary":"#ffffff","on-secondary-fixed":"#00174b","error":"#ba1a1a","surface-variant":"#e0e3e7","secondary-container":"#316bf3","inverse-surface":"#2d3134","surface-tint":"#515f78","on-primary-fixed-variant":"#39475f","on-tertiary":"#ffffff","surface-container-low":"#f1f4f8","tertiary":"#000000","primary":"#000000","on-error":"#ffffff","outline-variant":"#c5c6cd","on-primary-container":"#76849f","tertiary-fixed-dim":"#bcc7de","surface-container-high":"#e5e8ec","on-surface":"#181c1f","surface-container-highest":"#e0e3e7","secondary":"#0051d5","error-container":"#ffdad6","on-primary-fixed":"#0d1c32"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-sm":"0.5rem","margin-mobile":"1rem","margin-tablet":"1.5rem","gutter-lg":"1.5rem","gutter-md":"1rem","touch-target-min":"3rem","gutter-xl":"2rem","gutter-xs":"0.25rem"},"fontFamily":{"body-sm":["Inter"],"display-lg":["Manrope"],"label-md":["Inter"],"headline-lg-mobile":["Manrope"],"title-lg":["Manrope"],"headline-sm":["Manrope"],"body-md":["Inter"],"headline-md":["Manrope"],"display-md":["Manrope"],"headline-lg":["Manrope"],"body-lg":["Inter"],"label-lg":["Inter"],"label-sm":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"display-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"title-lg":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-md":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-6 px-margin-mobile flex items-center justify-between text-on-surface select-none"><span class="font-label-sm text-label-sm text-on-surface font-semibold">9:41</span><div class="flex items-center gap-1.5 text-on-surface"><span class="material-symbols-outlined text-[14px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[14px]">battery_full</span></div></div><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-gutter-sm min-w-0"><img alt="scamhunt logo.jpeg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UAhZoeF_vTiPqHuBrHx5jpf69_7SH13vXAUF_l1R_EzwzSemUwmx_Cz5eqhM51JdOtqTQqua6_BAmnmyJ-y3VF6VLNUK8Z3_G8i8P7HWptVRIdZ0R9qdrI6puXemm0zIBpdgPzgYvRaeZJCJ2RLbUXoN4GEO-vIFTKNZX_6bcEMJlpLdQFUprf77VQ-mvRT-s2CYcwB2pjKAyjS_sXW7lLaLzpyHLvaQ5Fnvv6AfBcyb2ZcugxGrBrIAhJdLxCS_W0MhtI3D7pjeo"/><div class="flex flex-col truncate"><span class="font-title-lg text-title-lg text-primary truncate leading-tight">ScamHunt</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate uppercase tracking-wider">Response</span></div></div><div class="flex items-center gap-gutter-xs"><button aria-label="Notifications" class="w-touch-target-min h-touch-target-min flex items-center justify-center relative text-on-surface rounded-full hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-22 pb-24 px-margin-mobile bg-surface"><div class="flex flex-col w-full space-y-5">
+<!-- Top Meta Banner & Delight Header -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-sm text-label-sm tracking-wide font-semibold">Draft Report #SH-2023-8821</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span>Auto-saving</span>
+</div>
+</div>
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Evidence Creator</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5 leading-relaxed">
+        Organize your digital evidence into a clear, court-admissible incident report.
+      </p>
+</div>
+</div>
+<!-- Evidence Integrity Callout Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-4 shadow-sm">
+<div class="flex items-start gap-3 relative z-10">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[22px]">fingerprint</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-title-lg text-on-surface leading-snug">Forensic Cryptographic Stamping</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm">SHA-256</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-normal">
+          All uploaded items are watermarked with device metadata, precise UTC timestamps, and tamper-proof hash chains.
+        </p>
+</div>
+</div>
+</div>
+<!-- Evidence Attachment Actions (Quick Access Carousel) -->
+<div class="flex flex-col space-y-2.5">
+<div class="flex items-center justify-between">
+<h2 class="font-title-lg text-title-lg text-on-surface">Add New Evidence</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap type to capture</span>
+</div>
+<div class="flex gap-2.5 overflow-x-auto pb-1.5 -mx-margin-mobile px-margin-mobile no-scrollbar select-none">
+<!-- Screenshot Action -->
+<button class="group flex flex-col items-center justify-center min-w-[74px] py-3 px-2 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-secondary-fixed transition active:scale-95 text-center" type="button">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-secondary group-hover:bg-on-primary mb-1.5 transition-colors">
+<span class="material-symbols-outlined text-[22px]">screenshot_monitor</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-on-secondary-fixed font-medium truncate w-full">Screenshot</span>
+</button>
+<!-- Image Action -->
+<button class="group flex flex-col items-center justify-center min-w-[74px] py-3 px-2 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-secondary-fixed transition active:scale-95 text-center" type="button">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-secondary group-hover:bg-on-primary mb-1.5 transition-colors">
+<span class="material-symbols-outlined text-[22px]">photo_camera</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-on-secondary-fixed font-medium truncate w-full">Image</span>
+</button>
+<!-- PDF Action -->
+<button class="group flex flex-col items-center justify-center min-w-[74px] py-3 px-2 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-secondary-fixed transition active:scale-95 text-center" type="button">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-secondary group-hover:bg-on-primary mb-1.5 transition-colors">
+<span class="material-symbols-outlined text-[22px]">picture_as_pdf</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-on-secondary-fixed font-medium truncate w-full">PDF Doc</span>
+</button>
+<!-- Payment Receipt Action -->
+<button class="group flex flex-col items-center justify-center min-w-[74px] py-3 px-2 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-secondary-fixed transition active:scale-95 text-center" type="button">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-secondary group-hover:bg-on-primary mb-1.5 transition-colors">
+<span class="material-symbols-outlined text-[22px]">receipt_long</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-on-secondary-fixed font-medium truncate w-full">Receipt</span>
+</button>
+<!-- Chat / Message Action -->
+<button class="group flex flex-col items-center justify-center min-w-[74px] py-3 px-2 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-secondary-fixed transition active:scale-95 text-center" type="button">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-secondary group-hover:bg-on-primary mb-1.5 transition-colors">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-on-secondary-fixed font-medium truncate w-full">Chat/SMS</span>
+</button>
+<!-- Voice Recording Action -->
+<button class="group flex flex-col items-center justify-center min-w-[74px] py-3 px-2 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-secondary-fixed transition active:scale-95 text-center" type="button">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-secondary group-hover:bg-on-primary mb-1.5 transition-colors">
+<span class="material-symbols-outlined text-[22px]">mic</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-on-secondary-fixed font-medium truncate w-full">Voice Note</span>
+</button>
+<!-- URL Link Action -->
+<button class="group flex flex-col items-center justify-center min-w-[74px] py-3 px-2 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-secondary-fixed transition active:scale-95 text-center" type="button">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-secondary group-hover:bg-on-primary mb-1.5 transition-colors">
+<span class="material-symbols-outlined text-[22px]">link</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface group-hover:text-on-secondary-fixed font-medium truncate w-full">Phish URL</span>
+</button>
+</div>
+</div>
+<!-- Attached Evidence List (Interactive Cards) -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-title-lg text-title-lg text-on-surface">Attached Items</h2>
+<span class="px-2 py-0.5 text-xs font-semibold rounded-full bg-secondary-fixed text-on-secondary-fixed">3 files</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium cursor-pointer">Sort by Date</span>
+</div>
+<!-- Item 1: WhatsApp Screenshot -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-3.5 shadow-sm transition-all duration-200 hover:shadow-md" id="evidence-item-1">
+<div class="flex items-center gap-3">
+<!-- Thumbnail -->
+<div class="relative w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A smartphone screenshot showing an urgent scam message impersonating an official bank with threatening alert symbols and suspicious URL links, high contrast, clean cyber forensics UI style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnW178_uIPxAiY10ghdG7qFNpcfbzQgyoaG164Cev1hLhsmUUOmqtgJQ9zil1LwX6Ikpglj8g525u5Xj84pONo6bz0PyquDpFomLnaUsr_aEDdi7yG0fvvVmAJDgeSUxAlc1F0OseFgfUptUj6aYLR1hmrQwheO98-guo6zyaaHtpMTgzqbB6ad8RG9-CkMKVEE8wHzjLeqap7KEtQCIxEcmnHaK2uXor6BFKpkQcA_m0ieZtW_vJeCw"/>
+<div class="absolute bottom-1 right-1 px-1 rounded bg-tertiary-container/80 text-on-tertiary font-label-sm text-[9px] leading-tight">PNG</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Screenshot</span>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-[#dcfce7] text-[#16a34a] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+              Verified
+            </span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate mt-1">WhatsApp_threat_chat.png</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Today, 10:45 AM • 842 KB</p>
+</div>
+<!-- Action Trash -->
+<button aria-label="Delete item" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-colors shrink-0" onclick="document.getElementById('evidence-item-1').remove()">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 2: SBI Phishing PDF -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-3.5 shadow-sm transition-all duration-200 hover:shadow-md" id="evidence-item-2">
+<div class="flex items-center gap-3">
+<div class="w-16 h-16 rounded-lg bg-surface-container-high flex flex-col items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">description</span>
+<span class="font-label-sm text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">PDF</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">PDF Document</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">1.2 MB</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate mt-1">SBI_Phishing_SMS_Receipt.pdf</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Today, 10:30 AM • 2 Pages</p>
+</div>
+<button aria-label="Delete item" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-colors shrink-0" onclick="document.getElementById('evidence-item-2').remove()">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 3: UPI Payment Receipt -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-3.5 shadow-sm transition-all duration-200 hover:shadow-md" id="evidence-item-3">
+<div class="flex items-center gap-3">
+<div class="relative w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up view of an unauthorized digital banking transfer receipt showing UPI transaction ID and a debit of 24500 rupees, clean financial layout style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8XJaBrDv2hdmGLu5Ctb9Lb53cZ08dbAZ3Hf2tJF6_HVjPw6Lqosi9PiEAJmIY--RH5JkXmGLShtxk0CcoqGptGJ77lYqBwSWXFUtobiMDoETil0A2CF2PUZzs-iKN_SwLzQL7UDKK_GXzh23wyAJXDA-4YnAMOZh9P61Lb6vfFvNBC4UQPWSrBcN6vIEKKkQEg1RaKGhmgUlBk17bNvsYkVP6Tcq0-rq8JV2XGcipmmRuc2vVZ-Vo1w"/>
+<div class="absolute bottom-1 right-1 px-1 rounded bg-secondary text-on-secondary font-label-sm text-[9px] leading-tight font-bold">UPI</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Payment Receipt</span>
+<span class="font-label-sm text-label-sm text-error font-bold tracking-tight">₹24,500</span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate mt-1">UPI_Debit_19300_Ref.jpg</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">UTR: <span class="font-mono text-[12px] text-on-surface">329104881923</span></p>
+</div>
+<button aria-label="Delete item" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-colors shrink-0" onclick="document.getElementById('evidence-item-3').remove()">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Incident Details Form Card -->
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm space-y-4">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-on-surface">Incident Details</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Required for FIR</span>
+</div>
+<!-- Field: Incident Title -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="incident-title">Incident Title</label>
+<div class="relative">
+<input class="w-full h-12 px-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="incident-title" type="text" value="SBI Account KYC Deactivation Phishing Scam"/>
+</div>
+</div>
+<!-- Field: Incident Category -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="incident-category">Incident Category</label>
+<div class="relative">
+<select class="w-full h-12 px-3.5 pr-10 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary appearance-none transition-all" id="incident-category">
+<option selected="">Banking Phishing / Fraud</option>
+<option>Fake Loan App Extortion</option>
+<option>Job / Task Investment Scam</option>
+<option>Identity Theft / Impersonation</option>
+<option>Malware / Remote Access Tool</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Grid for Date & UTR -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+<!-- Date & Time -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="incident-date">Date &amp; Time of Incident</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 pl-3.5 pr-10 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="incident-date" type="text" value="14 Oct 2023, 10:15 AM"/>
+<span class="material-symbols-outlined absolute right-3 text-[20px] text-on-surface-variant pointer-events-none">calendar_today</span>
+</div>
+</div>
+<!-- Transaction ID / UTR -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="incident-utr">Transaction ID / UTR</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 pl-3.5 pr-10 rounded-xl bg-surface-container-low text-on-surface font-mono text-body-md focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="incident-utr" type="text" value="329104881923"/>
+<span class="material-symbols-outlined absolute right-3 text-[20px] text-on-surface-variant pointer-events-none">tag</span>
+</div>
+</div>
+</div>
+<!-- Scammer Identifiers -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+<!-- Scammer Phone -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="scammer-phone">Scammer Contact / Phone</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 pl-3.5 pr-10 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="scammer-phone" type="tel" value="+91 98765 43210"/>
+<span class="material-symbols-outlined absolute right-3 text-[20px] text-on-surface-variant pointer-events-none">call</span>
+</div>
+</div>
+<!-- Scammer UPI ID -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="scammer-upi">Scammer UPI Handle</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 pl-3.5 pr-10 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="scammer-upi" type="text" value="paytm-kyc-dept@oksbi"/>
+<span class="material-symbols-outlined absolute right-3 text-[20px] text-on-surface-variant pointer-events-none">alternate_email</span>
+</div>
+</div>
+</div>
+<!-- Description Textarea -->
+<div class="flex flex-col space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="incident-notes">Description &amp; Incident Flow</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chronological detail</span>
+</div>
+<textarea class="w-full p-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-secondary transition-all resize-none leading-relaxed" id="incident-notes" rows="4">Received urgent SMS claiming SBI debit card was blocked due to pending PAN KYC. Clicked on the link provided in SMS (sbi-kyc-update.xyz) which prompted for OTP and mobile banking credentials. Unauthorized UPI transfer of ₹24,500 executed immediately after submitting OTP.</textarea>
+</div>
+</div>
+<!-- Bottom Action Dock & Export Compliance -->
+<div class="flex flex-col space-y-3 pt-1">
+<div class="flex flex-col sm:flex-row gap-3">
+<!-- Secondary Action -->
+<button class="h-12 sm:w-1/3 w-full rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+        Review Evidence
+      </button>
+<!-- Primary Action -->
+<button class="h-12 sm:w-2/3 w-full rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-md active:scale-[0.98] hover:bg-secondary/90 transition" id="generate-report-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+        Generate Incident Report (PDF)
+      </button>
+</div>
+<!-- Compliance / Explanatory Note -->
+<div class="flex items-start gap-2 px-1">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">policy</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+        Formatted directly for the <span class="font-semibold text-on-surface">National Cyber Crime Portal</span> (cybercrime.gov.in) &amp; Bank Chargeback / Dispute Resolution teams.
+      </p>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Ensure active state on Evidence bottom nav
+    const evidenceTab = document.querySelector('nav a[data-path="evidence"]');
+    if (evidenceTab) {
+      document.querySelectorAll('nav a').forEach(el => {
+        el.querySelector('.nav-pill')?.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed');
+        el.querySelector('.nav-label')?.classList.remove('text-on-surface', 'font-semibold');
+      });
+      const pill = evidenceTab.querySelector('.nav-pill');
+      const label = evidenceTab.querySelector('.nav-label');
+      if (pill) {
+        pill.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed');
+      }
+      if (label) {
+        label.classList.add('text-on-surface', 'font-semibold');
+      }
+    }
+
+    // Micro-interaction: button state feedback
+    const genBtn = document.getElementById('generate-report-btn');
+    if (genBtn) {
+      genBtn.addEventListener('click', function() {
+        const originalText = this.innerHTML;
+        this.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span> Compiling Signed Dossier...';
+        this.classList.add('opacity-90');
+        setTimeout(() => {
+          this.innerHTML = '<span class="material-symbols-outlined text-[20px]">task_alt</span> Report Ready & Downloaded!';
+          this.classList.replace('bg-secondary', 'bg-[#16a34a]');
+          setTimeout(() => {
+            this.innerHTML = originalText;
+            this.classList.replace('bg-[#16a34a]', 'bg-secondary');
+            this.classList.remove('opacity-90');
+          }, 3000);
+        }, 1200);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.05)]" data-active-classes="[&amp;&gt;.nav-pill]:bg-secondary-fixed [&amp;&gt;.nav-pill]:text-on-secondary-fixed [&amp;&gt;.nav-label]:text-on-surface [&amp;&gt;.nav-label]:font-semibold"><div class="flex justify-between items-center h-20 px-gutter-sm"><a class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant group" data-path="home" href="#"><div class="nav-pill w-14 h-8 rounded-full flex items-center justify-center transition-colors mb-1"><span class="material-symbols-outlined text-[24px]">shield</span></div><span class="nav-label font-label-sm text-label-sm text-on-surface-variant transition-colors">Home</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant group" data-path="scan" href="#"><div class="nav-pill w-14 h-8 rounded-full flex items-center justify-center transition-colors mb-1"><span class="material-symbols-outlined text-[24px]">radar</span></div><span class="nav-label font-label-sm text-label-sm text-on-surface-variant transition-colors">Scan</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant group [&amp;&gt;.nav-pill]:bg-secondary-fixed [&amp;&gt;.nav-pill]:text-on-secondary-fixed [&amp;&gt;.nav-label]:text-on-surface [&amp;&gt;.nav-label]:font-semibold" data-path="response" href="#"><div class="nav-pill w-14 h-8 rounded-full flex items-center justify-center transition-colors mb-1"><span class="material-symbols-outlined text-[24px]">support</span></div><span class="nav-label font-label-sm text-label-sm text-on-surface-variant transition-colors">Response</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant group" data-path="evidence" href="#"><div class="nav-pill w-14 h-8 rounded-full flex items-center justify-center transition-colors mb-1"><span class="material-symbols-outlined text-[24px]">folder_special</span></div><span class="nav-label font-label-sm text-label-sm text-on-surface-variant transition-colors">Evidence</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[48px] py-1 text-on-surface-variant group" data-path="profile" href="#"><div class="nav-pill w-14 h-8 rounded-full flex items-center justify-center transition-colors mb-1"><span class="material-symbols-outlined text-[24px]">account_circle</span></div><span class="nav-label font-label-sm text-label-sm text-on-surface-variant transition-colors">Profile</span></a></div></nav></body></html>

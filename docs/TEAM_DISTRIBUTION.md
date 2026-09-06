@@ -1,4 +1,4 @@
-##  Team & Role Division
+﻿##  Team & Role Division
 
 | Teammate     | Role / Focus Area       | Core Responsibilities |
 

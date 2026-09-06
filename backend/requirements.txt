@@ -1,0 +1,27 @@
+# ScamHunt dependencies
+#
+# tkinter is part of the Python standard library on Windows/macOS installers.
+# On Linux you may need to install it via your package manager, e.g.:
+#   Debian/Ubuntu: sudo apt install python3-tk
+#   Fedora:        sudo dnf install python3-tkinter
+#
+# Core (required for basic text/URL/file/case/email features):
+#   (no third-party packages are strictly required for these features)
+
+# Optional — Screenshot OCR (AI Scam Detector image mode, Incident Response image evidence)
+Pillow>=10.0.0
+pytesseract>=0.3.10
+# pytesseract also requires the Tesseract OCR binary to be installed on the OS:
+#   Debian/Ubuntu: sudo apt install tesseract-ocr
+#   macOS:         brew install tesseract
+#   Windows:       https://github.com/UB-Mannheim/tesseract/wiki
+
+# Optional — QR code decoding (QR Analyzer, Incident Response QR evidence)
+pyzbar>=0.1.9
+# pyzbar requires the native zbar shared library:
+#   Debian/Ubuntu: sudo apt install libzbar0
+#   macOS:         brew install zbar
+#   Windows:       bundled with the pyzbar wheel
+
+# Optional — PDF evidence report generation (Evidence Creator)
+reportlab>=4.0.0
