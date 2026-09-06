@@ -1,4 +1,4 @@
-# 🛡️ ScamHunt 2.0 — AI-Assisted Mobile Threat Defense Suite
+# 🛡️ ScamHunt  —  Mobile Threat Defense Suite
 
 > **Winner-grade cybersecurity suite** empowering citizens and organizations to **detect, assess, contain, and legally preserve evidence** against digital scams, phishing messages, extortion, authority impersonation, and fraudulent UPI payment requests.
 
